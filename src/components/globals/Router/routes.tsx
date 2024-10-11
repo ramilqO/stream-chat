@@ -5,7 +5,7 @@ import ChatList from '../../../screens/ChatList/ChatList';
 
 export const publicRoutes = [
     {
-        path: '/login',
+        path: '/',
         element: <Login />,
     },
     {
@@ -16,7 +16,7 @@ export const publicRoutes = [
 
 export const privateRoutes = [
     {
-        path: '/chats',
+        path: '/',
         element: <ChatList />,
     },
 ];

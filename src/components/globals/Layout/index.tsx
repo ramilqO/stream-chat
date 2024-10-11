@@ -1,7 +1,7 @@
 import React, { FC, ReactNode } from 'react';
 import { View } from 'react-native';
-import Navbar from '../Navbar/Navbar';
-import BottomNav from '../BottomNav/BottomNav';
+import Navbar from '../Navbar';
+import BottomNav from '../BottomNav';
 
 interface ILayout {
     showBottomNav?: boolean;
