@@ -6,7 +6,7 @@ const Login: FC = () => {
     return (
         <View>
             <Text>Login Component</Text>
-            <Input placeholder="email" />
+            <Input placeholder="email" error="Ошибка в инпуте" />
             <Input placeholder="password" />
         </View>
     );

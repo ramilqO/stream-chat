@@ -2,11 +2,11 @@ import React, { createContext, useState, ReactNode, useEffect } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { themes } from '../utils/themes';
 
-export const ThemeContext = createContext<keyof typeof themes>('light');
+export const ThemeContext = createContext<keyof typeof themes>('dark');
 export const SetterContext = createContext<React.Dispatch<React.SetStateAction<keyof typeof themes>> | null>(null);
 
 const ThemeProvider = ({ children }: { children: ReactNode }) => {
-    const [theme, setTheme] = useState<keyof typeof themes>('light');
+    const [theme, setTheme] = useState<keyof typeof themes>('dark');
 
     useEffect(() => {
         const loadTheme = async () => {
